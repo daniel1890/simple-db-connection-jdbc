@@ -1,1 +1,1 @@
-# exercise-jdbc
+Run the main-method in JdbcApp. 
