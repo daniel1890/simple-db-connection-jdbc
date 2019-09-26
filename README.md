@@ -6,7 +6,7 @@ Onderwerp is het bekend raken met JDBC en de datasource-laag.
 
 In deze oefening zal een stand-alone Java applicatie worden gemaakt, die in staat is om
 een `Item` in een relationele database op te slaan, gebruikmakend van JDBC.
-We zullen hierbij uitgaan van een MySql database.
+We zullen hierbij uitgaan van een MySql database (zorg voor de [community versie](https://dev.mysql.com/downloads/)).
 
 **In deze oefening leer je:**
 
@@ -38,10 +38,11 @@ Voordat deze beschikbaar is moet er eerst een dependency aan de `pom.xml` worden
 
   ```
 	<dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>5.1.34</version>
-   </dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.15</version>
+        </dependency>
+
    ```
 ## 6: Aanmaken Data Access Object
 Maak een nieuwe klasse genaamd `ItemDao` met een methode genaamd `findAll()` die een `List<Item>`
