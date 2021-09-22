@@ -20,7 +20,7 @@ We zullen hierbij uitgaan van een MySql database (zorg voor de [community versie
 Voeg een properties-bestand toe genaamd `database.properties` en plaats dit bestand in *src/main/resources*.
 Voeg properties en waarden toe voor
 * driver: bijvoorbeeld *com.mysql.cj.jdbc.Driver*
-* connectionstring: bijvoorbeeld *jdbc:mysql://localhost:3306/heroes?serverTimezone=UTC&user=YOUR_USERNAME_HERE&password=YOUR_PASSWORD*
+* connectionstring: bijvoorbeeld *jdbc:mysql://localhost:3306/heroes?serverTimezone=UTC&user=YOUR_USERNAME_HERE&password=YOUR_PASSWORD&useSSL=false*
 
 ## 2: Laden van de properties
 Maak een nieuwe klasse `DatabaseProperties` in de package `nl.han.ica.oose.dea.datasource.util` die 
