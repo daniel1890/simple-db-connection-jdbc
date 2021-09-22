@@ -19,8 +19,8 @@ We zullen hierbij uitgaan van een MySql database (zorg voor de [community versie
 ## 1: Toevoegen Database properties-bestand
 Voeg een properties-bestand toe genaamd `database.properties` en plaats dit bestand in *src/main/resources*.
 Voeg properties en waarden toe voor
-* driver: bijvoorbeeld *com.mysql.jdbc.Driver*
-* connectionstring: bijvoorbeeld *jdbc:mysql://localhost/items?user=YOUR_USERNAME_HERE&password=YOUR_PASSWORD*
+* driver: bijvoorbeeld *com.mysql.cj.jdbc.Driver*
+* connectionstring: bijvoorbeeld *jdbc:mysql://localhost:3306/heroes?serverTimezone=UTC&user=YOUR_USERNAME_HERE&password=YOUR_PASSWORD*
 
 ## 2: Laden van de properties
 Maak een nieuwe klasse `DatabaseProperties` in de package `nl.han.ica.oose.dea.datasource.util` die 
@@ -40,7 +40,7 @@ Voordat deze beschikbaar is moet er eerst een dependency aan de `pom.xml` worden
 	<dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.15</version>
+            <version>8.0.26</version>
         </dependency>
 
    ```
