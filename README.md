@@ -38,11 +38,10 @@ Voordat deze beschikbaar is moet er eerst een dependency aan de `pom.xml` worden
 
   ```
 	<dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.26</version>
-        </dependency>
-
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>8.0.26</version>
+	</dependency>
    ```
 ## 6: Aanmaken Data Access Object
 Maak een nieuwe klasse genaamd `ItemDao` met een methode genaamd `findAll()` die een `List<Item>`
