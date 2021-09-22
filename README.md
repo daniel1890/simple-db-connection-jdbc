@@ -61,7 +61,7 @@ Gebruik de `main()` methode voor het aanroepen van de findAll() methode.
 ## 7: Toevoegen Logging
 Tot nu toe heb je mogelijk excepties als volgt opgevangen:
 
-	```
+```
 	  try
 	  {
 	      connection.prepareStatement("...").execute();
@@ -69,7 +69,7 @@ Tot nu toe heb je mogelijk excepties als volgt opgevangen:
 	  } catch (SQLException e) {
 	      e.printStackTrace();
 	  }
-	 ```
+```
 
 Zoals je mogelijk weet worden de stacktrace uitgeprint via `System.out`, die omgeleid kan worden.
 Daarom heeft het de voorkeur een Logger te gebruiken.
