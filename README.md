@@ -23,7 +23,7 @@ Voeg properties en waarden toe voor
 * connectionstring: bijvoorbeeld *jdbc:mysql://localhost:3306/items?serverTimezone=UTC&user=YOUR_USERNAME_HERE&password=YOUR_PASSWORD&useSSL=false*
 
 ## 2: Laden van de properties
-Maak een nieuwe klasse `DatabaseProperties` in de package `nl.han.ica.oose.dea.datasource.util` die 
+Maak een nieuwe klasse `DatabaseProperties` in de package `nl.han.aim.oose.dea.datasource.util` die 
 het properties-bestand kan laden en de waarden via get-methodes beschikbaar maakt.
 
 ## 3: Toevoegen van een main-methode
@@ -45,7 +45,7 @@ Voordat deze beschikbaar is moet er eerst een dependency aan de `pom.xml` worden
    ```
 ## 6: Aanmaken Data Access Object
 Maak een nieuwe klasse genaamd `ItemDao` met een methode genaamd `findAll()` die een `List<Item>`
-teruggeeft. Plaats deze klasse in de package `nl.han.ica.oose.dea.datasource` en implementeer de `findAll`
+teruggeeft. Plaats deze klasse in de package `nl.han.aim.oose.dea.datasource` en implementeer de `findAll`
 methode:
 
 * Gebruik `Class.forName` om de database driver te laden
